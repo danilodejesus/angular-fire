@@ -1,1 +1,17 @@
-hola
+<form [formGroup]="this.form">
+  <input
+    placeholder="New Value"
+    formControlName="newValue"
+    type="text"
+    class="input-field col s12"
+  />
+  <button (click)="onSubmit()">
+    Submit
+  </button>
+</form>
+
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.name}}
+  </li>
+</ul>

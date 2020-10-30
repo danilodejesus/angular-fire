@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-fire-431df": {
+      "hosting": {
+        "angular-fire": [
+          "angular-fire-431df"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-fire-431df"
+  }
+}
