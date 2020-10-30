@@ -1,0 +1,6 @@
+<ul>
+  <li class="text" *ngFor="let item of clients | async">
+    {{item.name}} - {{item.lastName}} - {{item.age}} - {{item.date}}
+  </li>
+  <!-- <p>Promedio de edades: {{clients.age}}</p> -->
+</ul>

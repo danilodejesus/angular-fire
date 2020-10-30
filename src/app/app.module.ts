@@ -1,3 +1,4 @@
+import { ClientModule } from './client/client.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +10,7 @@ import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestor
 import { environment } from '../environments/environment';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AngularFirestoreModule,
     FormsModule,
     ReactiveFormsModule,
+    ClientModule,
+    NgbModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

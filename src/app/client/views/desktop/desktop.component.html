@@ -1,0 +1,42 @@
+<div class="container mt-5">
+  <div class="row">
+    <form [formGroup]="form" class="text-center w-100">
+      <input
+        placeholder="Nombre"
+        formControlName="name"
+        type="text"
+        class="form-group col-lg-5 mr-4 ml-4"
+      />
+      <input
+        placeholder="Apellido"
+        formControlName="lastName"
+        type="text"
+        class="form-group col-lg-5 mr-5 ml-5"
+      />
+      <input
+        placeholder="Edad"
+        formControlName="age"
+        type="number"
+        class="form-group col-lg-5 mr-4 ml-4"
+      />
+      <input
+        placeholder="Fecha de nacimiento"
+        formControlName="date"
+        type="text"
+        class="form-group col-lg-5 mr-5 ml-5"
+      />
+
+      <div class="row justify-content-center">
+        <input class="btn-primary add-client" value="Agregar cliente" type="submit" [disabled]="form.invalid" (click)="createClient(form.value)" />
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<div class="container mt-5">
+  <app-client-list
+    [clients]="items"
+  ></app-client-list>
+</div>
